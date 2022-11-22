@@ -26,11 +26,11 @@ const signin = async (
   context: ApiContext,
   params: SigninParams,
 ): Promise<User> => {
-  return (
-    await fetcher(`${context.apiRootUrl.replace(/\/$/g, '')}/suth/signin`),
+  return await fetcher(
+	`${context.apiRootUrl.replace(/\/$/g, '')}/suth/signin`,
     {
       method: 'POST',
-      header: {
+      headers: {
         Accept: 'application/json',
         'Content-Type': 'aplication/json',
       },
