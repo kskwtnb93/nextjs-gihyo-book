@@ -10,7 +10,7 @@ export type GetUserParams = {
 
 /**
  * ユーザーAPI（個別取得）
- * 　@praram context APIコンテキスト
+ * 　@param context APIコンテキスト
  * @param params パラメータ
  * @returns ユーザー
  */
